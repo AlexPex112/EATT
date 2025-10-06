@@ -20,7 +20,7 @@ jobs:
         java-version: '17'
 
     - name: Install WiX (for jpackage installer support)
-      run: choco install wix -y
+      run: choco install wixtoolset -y
 
     - name: Build project (package shaded JAR)
       run: mvn -B -DskipTests clean package
